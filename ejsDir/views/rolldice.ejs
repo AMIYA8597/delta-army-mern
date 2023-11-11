@@ -1,0 +1,21 @@
+<%- include("includes/headers")  %>
+
+<body>
+    <!-- <h1>Roll dice gave value : <%= Math.floor(Math.random() *6)+1 %>
+    </h1> -->
+
+    
+
+    <h1>Roll dice gave value : <%= dice %>
+    </h1>
+
+    <% if (dice==6) { %>
+     <h2> Nice , You have another chance for Roll dice</h2>
+
+    <% }%>
+
+    
+    <%- include("includes/footer")  %>
+</body>
+
+</html>

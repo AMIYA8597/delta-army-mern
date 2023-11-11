@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/style.css">
+    <title>All posts</title>
+    
+  </head>
+  <body>
+    <h1>
+      Quora Posts <% for(friends of we) { %>
+
+        <div class="post">
+            <h5 class="user">
+                @ <%= friends.username%>
+            </h5>
+            <h6 class="cont">
+                <%= friends.content%>
+            </h6>
+            <a href="http://localhost:4000/posts/<%= friends.id %>"> see in Details</a> &nbsp; &nbsp;
+            <a href="http://localhost:4000/posts/<%= friends.id %>/edit"> Edit</a> &nbsp; &nbsp;
+            <form method="post" action="/post/<%= friends.id %>?_method="DELETE">
+
+              <button class="button">Delete Post</button>
+
+            </form>
+            
+          </div>
+    
+          <% } %>
+          <br>
+
+      <a href="http://localhost:4000/posts/new"> create new post</a>
+    </h1>
+  </body>
+</html>

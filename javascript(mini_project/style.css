@@ -1,0 +1,17 @@
+div {
+  height: 500px;
+  width: 400px;
+  background-color: pink;
+}
+
+ul {
+  background-color: gold;
+  margin: 10px;
+  padding: 10px;
+}
+
+li {
+  background-color: aqua;
+  margin: 10px;
+  padding: 10px;
+}
