@@ -1,0 +1,24 @@
+<% layout("/layouts/boilerPlate") %>
+
+<body>
+    <h3>
+        listings details
+    
+        <h4>
+            <ul>
+                <li><%= idlisting.title %></li>
+                <li><%= idlisting.description %></li>
+                <li> &#8377; <%= idlisting.price.toLocaleString("en-IN") %> </li>
+                <li><%= idlisting.location %></li>
+                <li><%= idlisting.country %></li>
+              </ul>
+              <br>
+              <a href="/listings/<%= idlisting._id %>/edit">edit this listing</a>
+              <br><br>
+              <form method="post" action="/listings/<%= idlisting._id %>?_method=delete">
+                <button>Delete this listings</button>
+              </form>
+        </h4>
+
+    </h3>
+</body>
