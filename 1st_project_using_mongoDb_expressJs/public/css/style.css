@@ -2,8 +2,14 @@ body {
   font-family: "Montserrat", sans-serif !important;
   font-family: "Plus Jakarta Sans", sans-serif !important;
   font-family: "Poppins", sans-serif !important;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
+.container {
+    flex: 1;
+}
 .navbar {
   height: 5rem;
   background-color: aliceblue;
@@ -89,4 +95,29 @@ body {
 .card-img-overlay:hover {
     opacity: 0.5;
     background-color: aqua;
+}
+
+.add-btn {
+    background-color: aqua !important;
+    border: none;
+}
+
+
+.edit-btn{
+    background-color: aqua !important;
+    border: none;
+}
+
+/* Edit page  */
+
+.edit-btn {
+    background-color: aqua !important;
+    border: none; 
+}
+
+/* show page  */
+
+.show-img {
+  height: 30vh;
+
 }
