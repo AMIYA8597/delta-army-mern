@@ -59,7 +59,8 @@ const app = express();
 //     res.send("Hello API Page");
 // })
 
-// we can use middlearw in variable also 
+
+// we can use middlearw in variable also  {
 
 const checkToken =  (req,res,next) => {
     let { token } =req.query;
@@ -73,6 +74,10 @@ const checkToken =  (req,res,next) => {
 app.get("/api", checkToken, (req, res) => {
     res.send("Hello API Page");
 })
+
+// }
+
+
 
 
 app.get("/", (req, res) => {
